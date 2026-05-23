@@ -15,9 +15,25 @@
     }
 
     header {
-      padding: 60px 20px;
-      background: linear-gradient(to bottom, #1f1f1f, #111);
-    }
+  padding: 90px 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+header h1,
+header p,
+header .btn {
+  position: relative;
+  z-index: 1;
+}
 
     h1 {
       font-size: 42px;
@@ -102,7 +118,7 @@
   </section>
 
   <footer>
-    © 2026 lord_J • Justice Overland RGT
+    © 2024 lord_J • Justice Overland RGT
   </footer>
 
 </body>
