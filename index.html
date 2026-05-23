@@ -76,6 +76,29 @@ header .btn {
       color: #777;
       font-size: 14px;
     }
+ .card {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   </style>
 </head>
 
@@ -146,7 +169,6 @@ header .btn {
     WhatsApp
   </a>
    </div>
-  </div> 
   </section>
   <footer>
     © 2024 lord_J • Justice Overland RGT
